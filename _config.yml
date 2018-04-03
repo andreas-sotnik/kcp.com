@@ -1,1 +1,16 @@
-theme: jekyll-theme-tactile
+title: Kings Cross Publishing
+email:  ps@pilumart.com
+baseurl: ""
+url: "https://andreas-sotnik.github.io/kcp.com/"
+# url: "http://kingscrosspublishing.com"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+
+host: 0.0.0.0
+port: 4000
