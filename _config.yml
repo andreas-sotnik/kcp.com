@@ -1,8 +1,8 @@
 title: King's Cross Publishing
 email:  ps@pilumart.com
 baseurl: ""
-url: "https://andreas-sotnik.github.io/kcp.com/"
-# url: "http://kingscrosspublishing.com"
+# url: "https://andreas-sotnik.github.io/kcp.com/"
+url: "http://kingscrosspublishing.com"
 
 sass:
   sass_dir: _sass
