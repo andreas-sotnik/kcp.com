@@ -25,11 +25,17 @@ html * {
   max-width: 570px;
   padding: 20px;
 
+  @media (max-width: 569px) {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
   @media (min-width: 570px) {
     position: absolute;
     left: 50%;
     top: 15%;
     margin-left: -260px;
+    margin-bottom: 70px;
   }
 
   background: rgba(255, 255, 255, 0.91);
@@ -48,6 +54,7 @@ html * {
         margin: 0 auto;
         @include unselectable();
         margin-bottom: 20px;
+        margin-top: -75px;
     }
     h1 {
         font-size: 22px;
@@ -74,6 +81,7 @@ html * {
         .ico {
           display: inline-block;
           .img-wrap {
+            @include unselectable();
             display: inline-block;
             width: 40px;
             height: 40px;
