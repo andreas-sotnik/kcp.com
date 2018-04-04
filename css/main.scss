@@ -22,23 +22,23 @@ html * {
 
 .panel {
   width: 100%;
-  max-width: 570px;
-  padding: 20px;
+  max-width: 480px;
+  padding: 25px;
 
-  @media (max-width: 569px) {
+  @media (max-width: 480px) {
     margin-top: 80px;
     margin-bottom: 50px;
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 481px) {
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 18%;
     margin-left: -260px;
     margin-bottom: 70px;
   }
 
-  background: rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.72);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,33 +46,34 @@ html * {
 
   .inner-panel {
     background: white;
-    border: 1px solid #cc4444;
+    border: 1px solid #e11d1e;
     padding: 15px 25px 35px 25px;
     .logo {
         max-width: 100%;
         display: block;
         margin: 0 auto;
         @include unselectable();
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         margin-top: -75px;
     }
     h1 {
-        font-size: 22px;
+        font-size: 24px;
         text-align: center;
-        font-weight: normal;
-        color: #1d1e21;
+        font-weight: bold;
+        color: #353535;
         margin-bottom: 15px;
     }
     h2 {
-        font-size: 19px;
+        font-size: 18px;
         text-align: center;
-        font-weight: normal;
-        color: #1d1e21;
-        margin-bottom: 15px;
+        font-weight: lighter;
+        color: #353535;
+        margin-bottom: 40px;
     }
 
     .row {
       width: 100%;
+      margin-top: 30px;
       .col {
         float: left;
         width: 25%;
@@ -80,17 +81,51 @@ html * {
 
         .ico {
           display: inline-block;
+          font-weight: bold;
+          font-size: 15px;
+          color: #353535;
+          text-decoration: none;
+
           .img-wrap {
             @include unselectable();
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            background-color: red;
+            width: 34px;
+            height: 34px;
+            border-radius: 17px;
+            background-color: #e11d1e;
             margin-bottom: 10px;
             overflow: hidden;
             img {
-              max-width: 30px;
+              max-width: 22px;
+            }
+          }
+
+          &:hover {
+            color: black;
+            .img-wrap {
+              background-color: #d1191a;
+            }
+          }
+
+          &.amazon {
+            img {
+              margin-top: 5px;
+            }
+          }
+          &.facebook {
+            img {
+              margin-top: 5px;
+            }
+          }
+          &.twitter {
+            img {
+              margin-top: 5px;
+            }
+          }
+          &.envelope {
+            img {
+              max-width: 19px;
+              margin-top: 6px;
             }
           }
         }
